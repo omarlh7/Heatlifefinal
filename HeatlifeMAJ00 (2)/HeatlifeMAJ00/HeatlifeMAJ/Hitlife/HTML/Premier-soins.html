@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Vitamines</title>
+    <link rel="stylesheet" href="../CSS/STYLE1.CSS">
+</head>
+<body>
+
+<header>
+    <div class="header-logo">
+        <a href="../index.html">HealthWave</a>
+    </div>
+    <nav class="nav">
+        <ul class="nav-items">
+            <li class="nav-item"><a href="../index.html">Accueil</a></li>
+            <li class="nav-item"><a href="../HTML/consultation.html">Consultation</a></li>
+            <li class="nav-item"><a href="../HTML/Anti-inflamatoires.html">Commande en ligne</a></li>
+        </ul>
+        <div class="nav-actions">
+            <div class="nav-search">
+                <div class="nav-search__e1">
+                    <i class="las la-search"></i>
+                    <input type="text" placeholder="Search" class="search-input">
+                </div>
+                <a href="login.html" class="login-button">Se connecter</a>
+            </div>
+            <div class="language-select">
+                <select name="language" id="language">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="content">
+        <div class="categories-list">
+            <ul>
+                <li><a href="../HTML/Antibiotiques.html">Antibiotiques</a></li>
+                <li><a href="../HTML/Anti-inflamatoires.html">Anti-inflammatoires</a></li>
+                <li><a href="../HTML/Complément.html">Compléments alimentaires</a></li>
+                <li><a href="../HTML/Premier-soins.html">Premiers soins</a></li>
+                <li><a href="../HTML/SoinHydra.html">Soins et hydratation</a></li>
+                <li><a href="../HTML/Vitamine.html">Vitamines</a></li>
+            </ul>
+        </div>
+        <div class="products-list">
+            <ul>
+                <li data-name="Bandage" data-price="5,99$" data-description="Bandage "> <a  class="clickable-item"> <img src="../IMAGE/bandage.jpg " alt=""><span class="text">Bandage<br></span></a></li>
+                <li data-name="pansements" data-price="5,99$" data-description="pansements"> <a class="clickable-item"> <img src="../IMAGE/pansement.jpg" alt=""><span class="text">pansements<br></span></a></li>
+                <li data-name="Compresse" data-price="5,99$" data-description="Compresse"> <a  class="clickable-item"> <img src="../IMAGE/compresse.jpg" alt=""><span class="text">Compresse<br></span></a></li>
+                <li data-name="Solution Anticeptique" data-price="10,99$" data-description="Solution Anticeptique"> <a class="clickable-item"> <img src="../IMAGE/produit.jpg" alt=""><span class="text">Solution Anticeptique<br></span></a></li>
+                <li data-name="Kit de secours" data-price="12,99$" data-description="Kit de secours"> <a  class="clickable-item"> <img src="../IMAGE/kit.jpg" alt=""><span class="text">Kit de secours<br></span></a></li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<div class="product-info-modal" id="product-info-modal">
+    <div class="product-info-content" id="product-info-content" >
+        <span class="close-modal" id="close-modal" >&times;</span>
+        <h2 id="product-name">produit</h2>
+        <p id="product-price"></p>
+        <p id="product-description"></p>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <h3>Contactez-nous</h3>
+            <p>Email: contact@healthwave.com</p>
+            <p>Téléphone: +1 (873) 900-8774</p>
+            <p>Adresse: 128 Orleans, Ottawa</p>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <a href="#"><i class="lab la-facebook-f"></i><span class="sr-only">Facebook</span></a>
+            <a href="#"><i class="lab la-twitter"></i><span class="sr-only">Twitter</span></a>
+            <a href="#"><i class="lab la-instagram"></i><span class="sr-only">Instagram</span></a>
+            <a href="#"><i class="lab la-linkedin-in"></i><span class="sr-only">LinkedIn</span></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

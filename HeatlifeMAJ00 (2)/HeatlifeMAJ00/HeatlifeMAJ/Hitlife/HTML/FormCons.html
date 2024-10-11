@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire de consultation</title>
+    <link rel="stylesheet" href="../CSS/type1.CSS">
+    <script src="Form-script.js"></script>
+</head>
+
+<body>
+    <main>
+        <section class="cons-section">
+            <div class="cons-container">
+                <div class="cons-form">
+                    <h2>Remplisez le formulaire pour une consultation au plus vites </h2>
+                    <form action="#" method="post" id="cons-java" class="cons-form">
+                        <div class="form-group">
+                            <div>
+                                <label for="spécialiste">Quelle spécialiste voulez-vous consulter?</label>
+                                <select id="spécialiste" name="spécialiste" required>
+                                    <option value="0">Sélectionnez </option>
+                                    <option value="Psychiatre">Psychiatre</option>
+                                    <option value="Médecin généraliste">Médecin généraliste</option>
+                                    <option value="Dermatologue">Dermatologue</option>
+                                    <option value="Gastro-entérologue">Gastro-entérologue</option>
+                                    <option value="Orthopédiste">Orthopédiste</option>
+                                    <option value="Gynécologue">Gynécologue</option>
+                                    <option value="Pédiatre">Pédiatre</option>
+                                    <option value="Endocrinologue">Endocrinologue</option>
+                                    <option value="Psychologue">Psychologue</option>
+                                    <option value="Nutritionniste">Nutritionniste</option>
+                                </select>
+                            </div>
+
+                            <div>
+                                <label for="problème">Décrivez quel est votre problème?</label>
+                                <textarea name="problème" id="problème"
+                                    placeholder="Décrivez quel est votre problème?" required></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="rendez-vous-date">Sélectionnez une date qui vous conviez :</label>
+                                <input type="date" id="rendez-vous-date" name="rendez-vous-date" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="rendez-vous-temps">Sélectionnez une heure qui vous conviez :</label>
+                                <input type="time" id="rendez-vous-temps" name="rendez-vous-temps" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn">Confirmez</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

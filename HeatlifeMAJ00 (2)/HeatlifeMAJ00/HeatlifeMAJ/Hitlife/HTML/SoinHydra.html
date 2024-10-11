@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorie</title>
+    <link rel="stylesheet" href="../CSS/STYLE1.CSS">
+    <script src="../JS/exemp.js"></script>
+    <script src="../JS/script.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="header-logo">
+            <a href="index.html">HealthWave</a>
+        </div>
+        <nav class="nav">
+            <ul class="nav-items">
+                <li class="nav-item"><a href="../index.html">Accueil</a></li>
+                <li class="nav-item"><a href="../HTML/consultation.html">Consultation</a></li>
+                <li class="nav-item"><a href="../HTML/Anti-inflamatoires.html">Commande en ligne</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="nav-search">
+                    <div class="nav-search__e1">
+                        <i class="las la-search"></i>
+                        <input type="text" placeholder="Search" class="search-input">
+                    </div>
+                    <a href="../HTML/login.html" class="login-button">Se connecter</a>
+                </div>
+                <div class="language-select">
+                    <select name="language" id="language">
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<main>
+    <div class="content">
+        <div class="categories-list">
+            <ul>
+                <li><a href="../HTML/Antibiotiques.html">Antibiotiques</a></li>
+                <li><a href="../HTML/Anti-inflamatoires.html">Anti-inflammatoires</a></li>
+                <li><a href="../HTML/Complément.html">Compléments alimentaires</a></li>
+                <li><a href="../HTML/Premier-soins.html">Premiers soins</a></li>
+                <li><a href="../HTML/Sirop.html">Sirops</a></li>
+                <li><a href="../HTML/SoinHydra.html">Soins et hydratation</a></li>
+                <li><a href="../HTML/Vitamine.html">Vitamines</a></li>
+            </ul>
+        </div>
+        <div class="products-list">
+            <ul>
+                <li data-name="Créme" data-price="25,99$" data-description="Créme hydratante"> <a  class="clickable-item"> <img src="../IMAGE/Créme.jpeg" alt="Crème hydratante"><span class="text">Crème hydratante<br>Neutrogena</span></a></li>
+                <li data-name="Créme the ordinarry" data-price="40,99$" data-description="Créme hydratante"> <a class="clickable-item"> <img src="../IMAGE/Créme1.jpeg" alt="Crème The ordinarry"><span class="text">Crème<br>the ordinarry</span></a></li>
+                <li data-name="Créme Avéne" data-price="18,99$" data-description="Créme hydratante"> <a  class="clickable-item"> <img src="../IMAGE/Créme3.jpeg" alt="Crème hydratante Avéne"><span class="text">Crème hydratante<br>Avéne</span></a></li>
+                <li data-name="Créme Cerave" data-price="40,99$" data-description="Créme hydratante et nettoyante"> <a class="clickable-item"> <img src="../IMAGE/Créme4.jpeg" alt="Crème hydratante nettoyante Cerave"><span class="text">Crème hydratante<br>nettoyante Cerave</span></a></li>
+                <li data-name="Créme pour la peau" data-price="20,99$" data-description="Créme hydratante"> <a  class="clickable-item"> <img src="../IMAGE/Créme5.jpeg" alt="Crème hydratante pour la peau"><span class="text">Crème hydratante<br> pour la peau</span></a></li>
+                <li data-name="Shampooing au coco" data-price="10,99$" data-description="Shampooing hydratant"> <a class="clickable-item"> <img src="../IMAGE/Créme6.jpeg" alt="Shampooing hydratant au coco"><span class="text">Shampooing hydratant<br>au coco</span></a></li>
+                <li data-name="Créme pour les mains" data-price="21,99$" data-description="Créme nettoyante"> <a class="clickable-item"> <img src="../IMAGE/Créme7.jpeg" alt="Crème nettoyante pour les mains"><span class="text">Crème nettoyante<br>pour les mains</span></a></li>
+                <li data-name="Huile pour la peau" data-price="25,99$" data-description="Huile nourissante"> <a class="clickable-item"> <img src="../IMAGE/Créme8.jpeg" alt="Huile nourissante pour la peau"><span class="text">Huile nourissante<br>pour la peau</span></a></li>
+                <li data-name="Créme de nuit" data-price="5,99$" data-description="Créme de nuit"> <a class="clickable-item"> <img src="../IMAGE/Créme9.jpeg" alt="Crème de nuit"><span class="text">Créme de nuit</span></a></li>
+                <li data-name="Huile Nuxe" data-price="15,99$" data-description="Huile prodigieuse"> <a class="clickable-item"> <img src="../IMAGE/Créme10.jpeg" alt="Huile prodigieuse Nuxe"><span class="text">Huile prodigieuse<br>Nuxe</span></a></li>
+                <li data-name="Masque a la mangue" data-price="25,99$" data-description="Masque pour les mains"> <a class="clickable-item"> <img src="../IMAGE/Créme11.jpeg" alt="Masque pour les mains a la mangue"><span class="text">Masque pour les mains<br>a la mangue</span></a></li>
+                <li data-name="Crémel'aprés soleil" data-price="55,99$" data-description="Créme hydratante"> <a class="clickable-item"> <img src="../IMAGE/Créme12.jpeg" alt="Créme hydratante pour l'aprés soleil"><span class="text">Créme hydratante pour<br>l'aprés soleil</span></a></li>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<div class="product-info-modal" id="product-info-modal">
+    <div class="product-info-content" id="product-info-content" >
+        <span class="close-modal" id="close-modal" >&times;</span>
+        <h2 id="product-name">produit</h2>
+        <p id="product-price"></p>
+        <p id="product-description"></p>
+    </div>
+</div>
+
+
+</body>
+</html>
